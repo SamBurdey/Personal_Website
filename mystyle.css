@@ -8,16 +8,18 @@
     margin-right: 10%;
 }
 
-#AboutSection{
+.Sections {
     margin-left: 5%;
     margin-right: 5%;
+}
+
+#About {
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
-#ProjectSection {
-    margin-left: 5%;
-    margin-right: 5%;
+#Projects {
+
 }
 
 /* Referenced from CodePen @ https://ordinarycoders.com/blog/article/codepen-bootstrap-card-hovers */
@@ -53,4 +55,13 @@
 #gotoTop:hover {
     background-color: rgb(20, 20, 20);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+/* Reference From Boostrapious @ https://bootstrapious.com/p/bootstrap-divider */ 
+hr.solid {
+    border-top: 2px solid #999;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
