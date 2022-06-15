@@ -1,0 +1,137 @@
+.Header {
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+#Navs {
+    margin-top: 2%;
+    margin-right: 10%;
+}
+
+.Sections {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#About {
+
+}
+
+#Projects {
+}
+
+/* Referenced from CodePen @ https://ordinarycoders.com/blog/article/codepen-bootstrap-card-hovers */
+.card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 80px 18px 36px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+#gotoTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+#gotoTop:hover {
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+/* Reference From Boostrapious @ https://bootstrapious.com/p/bootstrap-divider */ 
+hr.solid {
+    border-top: 2px solid #999;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Refernced from CodePen @ https://codepen.io/themechills/pen/dMamgG */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translate3d(0,-20px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        transform: translate3d(0,-20px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.animatedFadeInDown {
+    opacity: 0
+}
+
+.fadeInDown {
+    opacity: 0;
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+}
