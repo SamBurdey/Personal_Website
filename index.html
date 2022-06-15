@@ -6,9 +6,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="mystyle.css">
       <!-- Boostrap Style Import -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"></head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+    <!-- Boostrap Script Import -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+    <!-- Better PDF Rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.14.305/build/pdf.min.js">
+      
+    </script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="HelperFunctions.js"></script>
+
+</head>
 
 <body>
+
+  <canvas id="my_canvas"></canvas>
 
   <div id="Navs">
     <ul class="nav justify-content-end">
@@ -29,8 +45,17 @@
 
   <div id="About" class="Sections">
     <figure class="text-center">
+      <h1><strong>Hi There!</strong></h1>
       <blockquote class="blockquote">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>
+          My name is Samuel Burdey. I'm a recent graduate of Drexel University, and the proud owner of a Bachelors of Science in Computer Science. <br> (BSCS for short!). </br>
+        </p>
+        <p>
+          While studying for my degree, I've worked several internships as QA Analyst and Software Developer, while also fufilling several Managerial positions for class workshops.
+        </p>
+        <p>
+          I have a passion to learn, to be a team player, and help deliver needed and desireable products. 
+        </p>
       </blockquote>
     </figure>
   </div>
@@ -42,13 +67,18 @@
   </div>
 
   <div id="Projects" class="Sections">
+    <h1 class="Header"><strong>Past Projects</strong></h1>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
-          <img src="/Personal_Website/Grand_Machinations_title_screen.png" class="card-img-top" alt="Grand Machinations Game Logo">
+          <img src="/Grand_Machinations_title_screen.png" class="card-img-top" alt="Grand Machinations Game Logo">
           <div class="card-body">
             <h3 class="card-title">Grand Machinations</h3>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5>Production Manager</h5>
+            <p class="card-text">
+              Games-Workshop I, 9 week project. First-Person puzzle-solving adventure game programmed within Unity. <br>
+              Maintained project website, production files, project budget, and weekly deliverable status/presentation.           
+            </p>
           </div>
           <div class="card-footer">
             <a href="https://sites.google.com/view/greybox-productions/home" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Homepage</a>
@@ -57,10 +87,15 @@
       </div>
       <div class="col">
         <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
-          <img src="/Personal_Website/GMIFY_Icon.png" class="card-img-top" alt="GMIFY Logo" style="max-height: 55%; max-width: 55%; margin: auto;">
+          <img src="/GMIFY_Icon.png" class="card-img-top" alt="GMIFY Logo" style="max-height: 55%; max-width: 55%; margin: auto;">
           <div class="card-body">
             <h3 class="card-title">GMIFY</h3>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <h5>Front-End Lead Manager</h5>
+            <p class="card-text">
+              12 Month Project. “Game-ifying” data collection surveys with a Bracket-tournament style methodology, progammed with REACT.js framework. <br>
+              Managed team through stages of full scale production, working in tandem with Back-End Team. <br>
+              Clear communication with Stakeholders; presenting weekly reports, challenging ideas, and answering questions.
+            </p>
           </div>
           <div class="card-footer">
             <a href="https://www.linkedin.com/company/gmifydata/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">LinkedIn Page</a>
@@ -69,10 +104,15 @@
       </div>
       <div class="col">
         <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
-          <img src="/Personal_Website/Temple Concept.png" class="card-img-top" alt="Quietus Game Logo">
+          <img src="/Temple Concept.png" class="card-img-top" alt="Quietus Game Logo">
           <div class="card-body">
             <h3 class="card-title">Quietus</h3>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <h5>Narrative Design & Writing Manager</h5>
+            <p class="card-text">
+              Games-Workshop II, 10 week project. First-Person puzzle-solving adventure game programmed within Unity. <br>
+              In charge of Narrative team, and Audio Production/Gathering. <br>
+              Worked alongside multiple depeartment managers to maintain webiste, production documents, and weekly deliverables/presentations.
+            </p>
           </div>
           <div class="card-footer">
             <a href="https://sites.google.com/view/foolery-studios/home" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Homepage</a>
@@ -82,12 +122,9 @@
     </div>
   </div>
 
-  <div class="Sections">
-    <figure class="text-center">
-      <blockquote class="blockquote">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </blockquote>
-    </figure>
+  <div class="mb-4">
+    <!-- Solid divider -->
+    <hr class="solid">
   </div>
 
   <div class="Sections">
@@ -96,6 +133,24 @@
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </blockquote>
     </figure>
+  </div>
+
+  <div class="mb-4">
+    <!-- Solid divider -->
+    <hr class="solid">
+  </div>
+
+  <div class="Sections">
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </blockquote>
+    </figure>
+  </div>
+
+  <div class="mb-4">
+    <!-- Solid divider -->
+    <hr class="solid">
   </div>
 
   <div id="Resume" class="Sections">
@@ -116,13 +171,6 @@
       <path d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z"/>
     </svg>
   </button>
-
-  <!-- Boostrap Script Import -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="HelperFunctions.js"></script>
 
 </body>
 </html>
