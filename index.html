@@ -14,7 +14,7 @@
 
     <!-- Better PDF Rendering -->
     <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.14.305/build/pdf.min.js">
-      
+
     </script>
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -23,9 +23,7 @@
 </head>
 
 <body>
-
-  <canvas id="my_canvas"></canvas>
-
+<div class="animated animatedFadeInDown fadeInDown">
   <div id="Navs">
     <ul class="nav justify-content-end">
       <li class="nav-item">
@@ -42,7 +40,9 @@
       </li>
     </ul>
   </div>
+</div>
 
+<div class="animated animatedFadeInUp fadeInUp">
   <div id="About" class="Sections">
     <figure class="text-center">
       <h1><strong>Hi There!</strong></h1>
@@ -71,7 +71,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
-          <img src="/Grand_Machinations_title_screen.png" class="card-img-top" alt="Grand Machinations Game Logo">
+          <img src="./Grand_Machinations_title_screen.png" class="card-img-top" alt="Grand Machinations Game Logo">
           <div class="card-body">
             <h3 class="card-title">Grand Machinations</h3>
             <h5>Production Manager</h5>
@@ -87,7 +87,7 @@
       </div>
       <div class="col">
         <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
-          <img src="/GMIFY_Icon.png" class="card-img-top" alt="GMIFY Logo" style="max-height: 55%; max-width: 55%; margin: auto;">
+          <img src="./GMIFY_Icon.png" class="card-img-top" alt="GMIFY Logo" style="max-height: 55%; max-width: 55%; margin: auto;">
           <div class="card-body">
             <h3 class="card-title">GMIFY</h3>
             <h5>Front-End Lead Manager</h5>
@@ -104,7 +104,7 @@
       </div>
       <div class="col">
         <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
-          <img src="/Temple Concept.png" class="card-img-top" alt="Quietus Game Logo">
+          <img src="./Temple Concept.png" class="card-img-top" alt="Quietus Game Logo">
           <div class="card-body">
             <h3 class="card-title">Quietus</h3>
             <h5>Narrative Design & Writing Manager</h5>
@@ -157,7 +157,7 @@
     <figure class="text-center">
       <blockquote class="blockquote">
         <h1>Resume</h1>
-        <object data="/Personal_Website/2023_Resume_v3.pdf" type="application/pdf" style="height: 800px; width: 100%;"> 
+        <object id="pdf-js-viewer" data="./2023_Resume_v3.pdf" type="application/pdf" frameborder="0" style="height: 880px; width: 100%; display: block;">
           <p>It appears you don't have a PDF plugin for this browser.
            Not a problem! You can <a href="/Personal_Website/2023_Resume_v3.pdf" target="_blank" rel="noopener noreferrer">click here to
           download the PDF file.</a></p>  
@@ -165,6 +165,8 @@
       </blockquote>
     </figure>
   </div>
+
+</div>
 
   <button onclick="topFunction()" id="gotoTop" title="Go to top">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up" viewBox="0 0 16 16">
