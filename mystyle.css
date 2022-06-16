@@ -8,18 +8,27 @@
     margin-right: 10%;
 }
 
+@media screen and (max-width: 671px) {
+    #Navs {
+        display: none ;
+    }
+}
+
+#Mobile_Navs {
+
+}
+
+@media screen and (min-width: 671px) {
+    #Mobile_Navs {
+        display: none ;
+    }
+}
+
 .Sections {
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
-}
-
-#About {
-
-}
-
-#Projects {
 }
 
 /* Referenced from CodePen @ https://ordinarycoders.com/blog/article/codepen-bootstrap-card-hovers */
@@ -50,9 +59,26 @@
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-  }
+}
   
 #gotoTop:hover {
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+#OpenDrawer {
+    z-index: 99;
+    font-size: 200px;
+    border: none;
+    outline: none;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#OpenDrawer:hover {
     background-color: rgb(20, 20, 20);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
