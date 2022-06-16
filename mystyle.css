@@ -85,7 +85,8 @@
 
 /* Reference From Boostrapious @ https://bootstrapious.com/p/bootstrap-divider */ 
 hr.solid {
-    border-top: 2px solid #999;
+    /*border-top: 2px solid #999;*/
+    border-top: 3px solid rgb(0, 0, 0);
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -192,4 +193,16 @@ animation-duration:5s;
 100% {
     transform:translateX(25%);
 }
-}  
+}
+
+/* Nav Item Hover Effect */
+a.nav-li-item {
+    font-size: 1.125em;
+    color: black;
+}
+
+a.nav-li-item:hover{
+    font-weight: bold;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
