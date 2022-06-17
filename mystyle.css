@@ -8,18 +8,27 @@
     margin-right: 10%;
 }
 
+@media screen and (max-width: 671px) {
+    #Navs {
+        display: none ;
+    }
+}
+
+#Mobile_Navs {
+
+}
+
+@media screen and (min-width: 671px) {
+    #Mobile_Navs {
+        display: none ;
+    }
+}
+
 .Sections {
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
-}
-
-#About {
-
-}
-
-#Projects {
 }
 
 /* Referenced from CodePen @ https://ordinarycoders.com/blog/article/codepen-bootstrap-card-hovers */
@@ -50,16 +59,34 @@
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-  }
+}
   
 #gotoTop:hover {
     background-color: rgb(20, 20, 20);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
+#OpenDrawer {
+    z-index: 99;
+    font-size: 200px;
+    border: none;
+    outline: none;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#OpenDrawer:hover {
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
 /* Reference From Boostrapious @ https://bootstrapious.com/p/bootstrap-divider */ 
 hr.solid {
-    border-top: 2px solid #999;
+    /*border-top: 2px solid #999;*/
+    border-top: 3px solid rgb(0, 0, 0);
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -134,4 +161,48 @@ hr.solid {
     opacity: 0;
     animation-name: fadeInDown;
     -webkit-animation-name: fadeInDown;
+}
+
+
+/* Neat Backrgound Referenced from SliderRevolution @ https://www.sliderrevolution.com/resources/css-animated-background/ */
+.bg {
+animation:slide 3s ease-in-out infinite alternate;
+background-image: linear-gradient(-60deg, rgb(243, 243, 243) 50%, rgb(157, 216, 255) 50%);
+bottom:0;
+left:-50%;
+opacity:.5;
+position:fixed;
+right:-50%;
+top:0;
+z-index:-1;
+}
+
+.bg2 {
+animation-direction:alternate-reverse;
+animation-duration:4s;
+}
+
+.bg3 {
+animation-duration:5s;
+}
+
+@keyframes slide {
+0% {
+    transform:translateX(-25%);
+}
+100% {
+    transform:translateX(25%);
+}
+}
+
+/* Nav Item Hover Effect */
+a.nav-li-item {
+    font-size: 1.125em;
+    color: black;
+}
+
+a.nav-li-item:hover{
+    font-weight: bold;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
