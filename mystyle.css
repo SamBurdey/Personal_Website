@@ -8,6 +8,24 @@
     margin-right: 10%;
 }
 
+/* Keeps image reasonably small on big screens, but enlarges it on smaller devices */
+#ProfilePicDiv {
+    height: 50%;
+    width: 50%;
+}
+
+@media screen and (min-width: 739px){
+    #ProfilePicDiv {
+        height: 15%;
+        width: 15%;
+    }
+}
+
+p{
+    font-family: Merriweather;
+}
+
+/*
 @media screen and (max-width: 671px) {
     #Navs {
         display: none ;
@@ -23,6 +41,7 @@
         display: none ;
     }
 }
+*/
 
 .Sections {
     margin-left: 5%;
