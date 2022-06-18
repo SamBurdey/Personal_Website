@@ -5,6 +5,8 @@
     <title>Samuel</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./mystyle.css">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" />
     <!-- Boostrap Style Import -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   
@@ -27,31 +29,197 @@
 <!-- Simple Nav -->
 <div class="animated animatedFadeInDown fadeInDown">
   <div id="Navs">
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link active nav-li-item" aria-current="page" href="#About">About</a>
+    <ul class="nav justify-content-end" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a id="home-tab" class="nav-link active nav-li-item" data-bs-toggle="tab" data-bs-target="#home" aria-current="page" aria-selected="true" href="#About">About</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link nav-li-item" href="#Work">Work</a>
+      <li class="nav-item" role="presentation">
+        <a id="experience-tab" class="nav-link nav-li-item" data-bs-toggle="tab" data-bs-target="#experience" aria-selected="false" href="#Experience">Experience</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link nav-li-item" href="#Projects">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-li-item" href="#Resume">Resume</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-li-item" href="#Contact">Contact</a>
+      <li class="nav-item" role="presentation">
+        <a id="resume-tab" class="nav-link nav-li-item" data-bs-toggle="tab" data-bs-target="#resume" aria-selected="false" href="#resume">Resume</a>
       </li>
     </ul>
   </div>
 </div>
 
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="animated animatedFadeInUp fadeInUp">
+      <!-- About Me -->
+      <div id="About" class="Sections">
+        <div id="ProfilePicDiv" class="mx-auto d-block">
+          <img src="./Resources/ProfilePic.jpg" alt="Rounded circle Image" class="rounded-circle" style="width: 100%; height: 100%">
+        </div>
+        <figure class="text-center">
+          <h1><strong>Hi There!</strong></h1>
+          <blockquote class="blockquote" style="font-Size: 1em;">
+            <h4>My name is Samuel Burdey.</h4>
+            <p>
+              I'm a recent graduate of <strong>Drexel University</strong>, and the proud owner of a <strong>Bachelors of Science in Computer Science</strong> <i>(BSCS for short!).</i><br>
+              While studying for my degree, I've worked several internships with different responsibilities, while also fufilling several Managerial positions for class workshops.<br>
+              I have a passion to learn, to be a productive team player, and want to help deliver needed and desireable products.
+            </p>
+          </blockquote>
+          <blockquote class="blockquote" style="font-Size: 1em;">
+            <p>
+            My goal for this website is <b>two-fold</b>; to be a nice platform where clients and companies can learn more about me, and to act as a <b>living implementation</b> of my studies and work.
+            So don't be alarmed if things look a little different next time you visit, as I want to continually maintain and imrpove upon this platform. You can learn more about it on my <a href="https://github.com/SamBurdey/Personal_Website">Github</a>; also linked below. 
+            </p>
+          </blockquote>
+        </figure>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <!-- Solid divider -->
+      <hr class="solid">
+    </div>
+  </div>
+  <div class="tab-pane" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+    <div class="animated animatedFadeInUp fadeInUp">
+        <!-- Previous Work -->
+        <div id="Work" class="Sections">
+          <h1 class="Header"><strong>Past Internships</strong></h1>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
+                <!-- <img src="./Resources/logo_iPipelineIU_11inW300px.jpg" class="card-img-top" alt="IPipeline Logo"> -->
+                <div class="card-body">
+                  <h3 class="card-title">IPipeline</h3>
+                  <h5>QA Analyst Co-op</h5>
+                  <p class="card-text" style="font-Size: 0.8em;">
+                    Utilized daily hands on experience of automation tools and frameworks.<br>
+                    Assigned and created JIRA work tickets for issues and tasks including but not limited to JIRA cleanup and assistance.<br>
+                    Acted as a point of escalation for complex quality assurance issues. <br>
+                    Worked independently, while incorporating Agile business practices.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
+                <!-- <img src="./Resources/brandywineglobal-png-300p-width.full.png" class="card-img-top" alt="Brandywine Logo" style="max-height: 55%; max-width: 55%; margin: auto;"> -->
+                <div class="card-body">
+                  <h3 class="card-title">Brandywine Global</h3>
+                  <h5>Software Development Co-op</h5>
+                  <p class="card-text" style="font-Size: 0.8em;">
+                    Led multiple project items cross functionally; including AppDev and Oracle.<br>
+                    Supported a broad range of high-level administrative duties. <br>
+                    Supported the change management and approval/communication process.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
+                <!-- <img src="./Resources/ECFMG-Logos-Header-Transparent-Background.png" class="card-img-top" alt="ECFMG Logo"> -->
+                <div class="card-body">
+                  <h3 class="card-title">ECFMG</h3>
+                  <h5>Software Quality Assurance Co-op</h5>
+                  <p class="card-text" style="font-Size: 0.8em;">
+                    Tested all aspects of web based applications; UI, databases, batch, and web service.<br>
+                    Tested commercial video recording software for consistency with multiple variables.<br>
+                    Followed direction with priorities and workload to achieve on-time completion of deliverables.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <!-- Solid divider -->
+          <hr class="solid">
+        </div>
+
+        <!-- Previous Projects -->
+        <div id="Projects" class="Sections">
+          <h1 class="Header"><strong>Past Projects</strong></h1>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
+                <img src="./Resources/Grand_Machinations_title_screen.png" class="card-img-top" alt="Grand Machinations Game Logo">
+                <div class="card-body">
+                  <h3 class="card-title">Grand Machinations</h3>
+                  <h5>Production Manager</h5>
+                  <p class="card-text" style="font-Size: 0.8em;">
+                    Games-Workshop I, 9 week project. First-Person puzzle-solving adventure game programmed within Unity. <br>
+                    Maintained project website, production files, project budget, and weekly deliverable status/presentation.           
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://sites.google.com/view/greybox-productions/home" target="_blank" rel="noopener noreferrer" class="d-grid btn btn-primary btn-secondary">Homepage</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
+                <img src="./Resources/GMIFY_Icon.png" class="card-img-top" alt="GMIFY Logo" style="max-height: 55%; max-width: 55%; margin: auto;">
+                <div class="card-body">
+                  <h3 class="card-title">GMIFY</h3>
+                  <h5>Front-End Lead Manager</h5>
+                  <p class="card-text" style="font-Size: 0.8em;">
+                    12 Month Project. “Game-ifying” data collection surveys with a Bracket-tournament style methodology, progammed with REACT.js framework. <br>
+                    Managed team through stages of full scale production, working in tandem with Back-End Team. <br>
+                    Clear communication with Stakeholders; presenting weekly reports, challenging ideas, and answering questions.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://www.linkedin.com/company/gmifydata/" target="_blank" rel="noopener noreferrer" class="d-grid btn btn-primary btn-secondary">LinkedIn Page</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
+                <img src="./Resources/Temple Concept.png" class="card-img-top" alt="Quietus Game Logo">
+                <div class="card-body">
+                  <h3 class="card-title">Quietus</h3>
+                  <h5>Narrative Design & Writing Manager</h5>
+                  <p class="card-text" style="font-Size: 0.8em;">
+                    Games-Workshop II, 10 week project. First-Person puzzle-solving adventure game programmed within Unity. <br>
+                    In charge of Narrative team, and Audio Production/Gathering. <br>
+                    Worked alongside multiple depeartment managers to maintain webiste, production documents, and weekly deliverables/presentations.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://sites.google.com/view/foolery-studios/home" target="_blank" rel="noopener noreferrer" class="d-grid btn btn-primary btn-secondary">Homepage</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+  <div class="tab-pane" id="resume" role="tabpanel" aria-labelledby="resume-tab">
+    <div class="animated animatedFadeInUp fadeInUp">
+      <!-- Embeded Resume PDF -->
+      <div id="Resume" class="Sections">
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <h1>Resume</h1>
+            <object id="pdf-js-viewer" data="./Resources/2023_Resume_v3.pdf" type="application/pdf" frameborder="0" style="height: 880px; width: 100%; display: block;">
+              <p>It appears you don't have a PDF plugin for this browser.
+              Not a problem! You can <a href="./Resources/2023_Resume_v3.pdf" target="_blank" rel="noopener noreferrer">click here to
+              download the PDF file.</a></p>  
+            </object>      
+          </blockquote>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 6/17/2022 Could delete at this point. Mobile browsers can handle 3 Nav items with ease -->
 <!-- Mobile Nav -->
+<!--
 <div id="Mobile_Navs">
   <nav class="navbar">
     <div class="container-fluid">
-      <!-- Dont make this a <Button> as it bring user back to top after exiting -->
+      !-- Dont make this a <Button> as it bring user back to top after exiting --
       <a class="navbar-toggler off-canvas-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" aria-expanded="false">
         <span class="navbar-toggler-icon"></span>
       </a>
@@ -85,179 +253,7 @@
   </div>
 
 </div>
-
-<!-- Main Body Content -->
-<div class="animated animatedFadeInUp fadeInUp">
-
-  <!-- About Me -->
-  <div id="About" class="Sections">
-    <figure class="text-center">
-      <h1><strong>Hi There!</strong></h1>
-      <blockquote class="blockquote" style="font-Size: 1em;">
-        <p>
-          My name is Samuel Burdey. I'm a recent graduate of Drexel University, and the proud owner of a Bachelors of Science in Computer Science. <br> (BSCS for short!). </br>
-        </p>
-        <p>
-          While studying for my degree, I've worked several internships as QA Analyst and Software Developer, while also fufilling several Managerial positions for class workshops.
-        </p>
-        <p>
-          I have a passion to learn, to be a team player, and help deliver needed and desireable products. 
-        </p>
-      </blockquote>
-    </figure>
-  </div>
-
-  <!-- Solid divider -->
-  <div class="mb-4">
-    <hr class="solid">
-  </div>
-
-  <!-- Previous Work -->
-  <div id="Work" class="Sections">
-    <h1 class="Header"><strong>Past Internships</strong></h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
-          <img src="./Resources/logo_iPipelineIU_11inW300px.jpg" class="card-img-top" alt="Grand Machinations Game Logo">
-          <div class="card-body">
-            <h3 class="card-title">IPipeline</h3>
-            <h5>QA Analyst Co-op</h5>
-            <p class="card-text" style="font-Size: 0.8em;">
-              Utilized daily hands on experience of automation tools and frameworks.<br>
-              Assigned and created JIRA work tickets for issues and tasks including but not limited to JIRA cleanup and assistance.<br>
-              Acted as a point of escalation for complex quality assurance issues. <br>
-              Worked independently, while incorporating Agile business practices.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
-          <img src="./Resources/brandywineglobal-png-300p-width.full.png" class="card-img-top" alt="GMIFY Logo" style="max-height: 55%; max-width: 55%; margin: auto;">
-          <div class="card-body">
-            <h3 class="card-title">Brandywine Global</h3>
-            <h5>Software Development Co-op</h5>
-            <p class="card-text" style="font-Size: 0.8em;">
-              Led multiple project items cross functionally; including AppDev and Oracle.<br>
-              Supported a broad range of high-level administrative duties. <br>
-              Supported the change management and approval/communication process.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
-          <img src="./Resources/ECFMG-Logos-Header-Transparent-Background.png" class="card-img-top" alt="Quietus Game Logo">
-          <div class="card-body">
-            <h3 class="card-title">ECFMG</h3>
-            <h5>Software Quality Assurance Co-op</h5>
-            <p class="card-text" style="font-Size: 0.8em;">
-              Tested all aspects of web based applications; UI, databases, batch, and web service.<br>
-              Tested commercial video recording software for consistency with multiple variables.<br>
-              Followed direction with priorities and workload to achieve on-time completion of deliverables.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="mb-4">
-    <!-- Solid divider -->
-    <hr class="solid">
-  </div>
-
-  <!-- Previous Projects -->
-  <div id="Projects" class="Sections">
-    <h1 class="Header"><strong>Past Projects</strong></h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
-          <img src="./Resources/Grand_Machinations_title_screen.png" class="card-img-top" alt="Grand Machinations Game Logo">
-          <div class="card-body">
-            <h3 class="card-title">Grand Machinations</h3>
-            <h5>Production Manager</h5>
-            <p class="card-text" style="font-Size: 0.8em;">
-              Games-Workshop I, 9 week project. First-Person puzzle-solving adventure game programmed within Unity. <br>
-              Maintained project website, production files, project budget, and weekly deliverable status/presentation.           
-            </p>
-          </div>
-          <div class="card-footer">
-            <a href="https://sites.google.com/view/greybox-productions/home" target="_blank" rel="noopener noreferrer" class="d-grid btn btn-primary btn-secondary">Homepage</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
-          <img src="./Resources/GMIFY_Icon.png" class="card-img-top" alt="GMIFY Logo" style="max-height: 55%; max-width: 55%; margin: auto;">
-          <div class="card-body">
-            <h3 class="card-title">GMIFY</h3>
-            <h5>Front-End Lead Manager</h5>
-            <p class="card-text" style="font-Size: 0.8em;">
-              12 Month Project. “Game-ifying” data collection surveys with a Bracket-tournament style methodology, progammed with REACT.js framework. <br>
-              Managed team through stages of full scale production, working in tandem with Back-End Team. <br>
-              Clear communication with Stakeholders; presenting weekly reports, challenging ideas, and answering questions.
-            </p>
-          </div>
-          <div class="card-footer">
-            <a href="https://www.linkedin.com/company/gmifydata/" target="_blank" rel="noopener noreferrer" class="d-grid btn btn-primary btn-secondary">LinkedIn Page</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card text-center h-100 shadow p-3 mb-5 bg-body rounded">
-          <img src="./Resources/Temple Concept.png" class="card-img-top" alt="Quietus Game Logo">
-          <div class="card-body">
-            <h3 class="card-title">Quietus</h3>
-            <h5>Narrative Design & Writing Manager</h5>
-            <p class="card-text" style="font-Size: 0.8em;">
-              Games-Workshop II, 10 week project. First-Person puzzle-solving adventure game programmed within Unity. <br>
-              In charge of Narrative team, and Audio Production/Gathering. <br>
-              Worked alongside multiple depeartment managers to maintain webiste, production documents, and weekly deliverables/presentations.
-            </p>
-          </div>
-          <div class="card-footer">
-            <a href="https://sites.google.com/view/foolery-studios/home" target="_blank" rel="noopener noreferrer" class="d-grid btn btn-primary btn-secondary">Homepage</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="mb-4">
-    <!-- Solid divider -->
-    <hr class="solid">
-  </div>
-
-  <!-- Sectional Template
-  <div class="Sections">
-    <figure class="text-center">
-      <blockquote class="blockquote">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </blockquote>
-    </figure>
-  </div>
-
-  <div class="mb-4">
-    <hr class="solid">
-  </div>
-  -->
-
-  <!-- Embeded Resume PDF -->
-  <div id="Resume" class="Sections">
-    <figure class="text-center">
-      <blockquote class="blockquote">
-        <h1>Resume</h1>
-        <object id="pdf-js-viewer" data="./Resources/2023_Resume_v3.pdf" type="application/pdf" frameborder="0" style="height: 880px; width: 100%; display: block;">
-          <p>It appears you don't have a PDF plugin for this browser.
-           Not a problem! You can <a href="./Resources/2023_Resume_v3.pdf" target="_blank" rel="noopener noreferrer">click here to
-          download the PDF file.</a></p>  
-        </object>      
-      </blockquote>
-    </figure>
-  </div>
-
-</div>
+-->
 
 <button onclick="topFunction()" id="gotoTop" title="Go to top">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up" viewBox="0 0 16 16">
@@ -269,6 +265,7 @@
 <footer id="Contact" class="text-center text-lg-start text-muted">
   <div class="text-center p-4">
     Website by Samuel Burdey (thats me!)<br>
+    <p><strong>Contact me at:</strong><br>
     <a class="text-reset fw-bold" href="mailto:samburdey@mail.com?subject = Subject&body = Message">samburdey@gmail.com</a>
 
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
@@ -281,8 +278,19 @@
       </svg>
     </a>
 
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+      <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+    </svg>
+
+    <a href="https://github.com/SamBurdey" target="_blank" rel="noopener noreferrer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+    </a>
+
     <br>
-    Website v1.0.1
+    Website v1.0.2
+    </p>
   </div>
 </footer>
 
